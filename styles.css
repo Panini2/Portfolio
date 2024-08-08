@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Sofia Pro Regular';
+    src: url('assets/fonts/Sofia\ Pro\ Regular\ Az.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro semi-bold';
+    src: url('assets/fonts/Sofia\ Pro\ Semi\ Bold\ Az.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alkia';
+    src: url('assets/fonts/Alkia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Requiner';
+    src: url('assets/fonts/Requiner-6RRLM.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #ede0d4;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: #282828;
+    padding: 0px 35px;
+    box-sizing: border-box;
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 45px; /* Adjust the logo height as needed */
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Sofia Pro Regular';
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px; /* Rounded corners for the buttons */
+}
+
+.nav-menu li a:hover {
+    background-color: #757575; /* Change background on hover */
+    border-radius: 5px; /* Rounded corners for the buttons */
+    transform: scale(1.1);
+}
+
+main {
+    margin-top: 70px;
+}
+
+.title {
+    width: 100%;
+    height: 400px;
+    padding: 10px 20px;
+    background-color: #E6CCB2;
+    color: #282828;
+    overflow: hidden;
+    font-size: 72px;
+    font-family: 'Requiner';
+    z-index: 0;
+}
+
+
+/* Box styling */
+.box {
+    margin: 5px; /* Space between boxes */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    /*border: 1px solid #000; /* Border to visualize the box */
+}
+
+.box1 {
+    width: 2000px;
+    height: 1000px;
+    transition: transform 0.8s ease;
+    background-color: #ddb892; /* Example color */
+    transform: translate3d(-2000px, -2000px, 0) rotate(-31deg);
+    z-index: -1;
+}
+
+.box2 {
+    width: 1120px;
+    height:812px;
+    transition: transform 0.8s ease;
+    background-color: #b08968; /* Example color */
+    transform: translate3d(-2000px, -500px, 0) rotate(238deg);
+    z-index: -2;
+}
+
+.box3 {
+    width: 1250px;
+    height:618px;
+    transition: transform 0.8s ease;
+    background-color: #7F5539; /* Example color */
+    transform: translate3d(-2000px, -500px, 0) rotate(231deg);
+
+    z-index: -3;
+}
+
+.box4 {
+    width: 1450px;
+    height:750px;
+    transition: transform 0.8s ease;
+    background-color: #9C6644; /* Example color */
+    transform: translate3d(-2000px, 0px, 0) rotate(-141deg);
+
+    z-index: -3;
+}
+
+.title:hover .box1 {
+    width: 2000px;
+    height: 1000px;
+    background-color: #ddb892; /* Example color */
+    transform: translate3d(-620px, -900px, 0) rotate(-31deg);
+    z-index: -1;
+}
+
+.title:hover .box2 {
+    width: 1120px;
+    height:812px;
+    background-color: #b08968; /* Example color */
+    transform: translate3d(10px, -1500px, 0) rotate(238deg);
+    z-index: -2;
+}
+
+.title:hover .box3 {
+    width: 1250px;
+    height:618px;
+    background-color: #7F5539; /* Example color */
+    transform: translate3d(-50px, -2250px, 0) rotate(231deg);
+
+    z-index: -3;
+}
+
+.title:hover .box4 {
+    width: 1450px;
+    height:750px;
+    background-color: #9C6644; /* Example color */
+    transform: translate3d(-290px, -2800px, 0) rotate(-141deg);
+
+    z-index: -3;
+}
+
+.title h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s ease;
+    z-index: 2; /* Higher than .box elements */
+}
+
+.title:hover h1{
+    transform: translateX(30%) scale(0.8);
+}
