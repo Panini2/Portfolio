@@ -97,7 +97,7 @@ main {
     height: 400px;
     background-color: #E6CCB2;
     color: #282828;
-    /*overflow: hidden;*/
+    overflow: hidden;
     font-family: 'Requiner';
     font-size: 72px;
     display: flex;
@@ -114,7 +114,7 @@ main {
 }
 
 .title:hover h1{
-    transform: translate(20vw) scale(0.8);
+    transform: translate(25vw) scale(0.8);
 }
 
 /* Box styling */
@@ -122,81 +122,74 @@ main {
     position: absolute;
     transform: translate(-50%, -50%);
     margin: 0px; /* Space between boxes */
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
     /*border: 1px solid #000; /* Border to visualize the box */
 }
 
 .box1 {
     width: 1000px;
-    height: 1000px;
+    height: 8000px;
     transition: transform 0.8s ease;
     background-color: #ddb892;
-    transform: translate(calc(10vw - 600px), -500px) rotate(59deg);
-    z-index: -2;
+    transform: translate(calc(25vw - 600px), -800px) rotate(90deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+
+    z-index: -4;
 }
 
 .box2 {
     width: 1000px;
-    height:1000px;
+    height:8000px;
     transition: transform 0.8s ease;
     background-color: #b08968;
-    transform: translate(calc(10vw - 600px), 500px) rotate(-31deg);
-    z-index: -1;
+    transform: translate(calc(25vw - 700px), 800px) rotate(-90deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.47); /* Optional shadow */
+
+    z-index: -3;
 }
 
 .box3 {
-    width: 40vw;
-    height: 90vw;
+    width: 1000px;
+    height: 8000px;
     transition: transform 0.8s ease;
     background-color: #7F5539;
-    transform: translate3d(-35vw, 0px, 0) rotate(-36deg);
+    transform: translate(calc(25vw - 700px), 800px) rotate(-90deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
 
-    z-index: -3;
-}
-
-.box4 {
-    width: 145px;
-    height:400px;
-    transition: transform 0.8s ease;
-    background-color: #9C6644;
-    transform: translate(0vw, 0px) rotate(0deg);*/
-
-    z-index: -3;
-}
-
-/*
-.title:hover .box1 {
-    width: 2000px;
-    height: 1000px;
-    background-color: #ddb892;
-    transform: translate(20vw, -400px) rotate(45deg);
     z-index: -2;
 }
 
-.title:hover .box2 {
-    width: 1120px;
-    height:812px;
-    background-color: #b08968;
-    transform: translate3d(10px, 150px, 0) rotate(-45deg);
+.box4 {
+    width: 1500px;
+    height: 8000px;
+    transition: transform 0.8s ease;
+    background-color: #9C6644;
+    transform: translate(calc(25vw - 700px), 1200px) rotate(-90deg);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+
     z-index: -1;
 }
-.title:hover .box3 {
-    width: 1250px;
-    height:618px;
-    background-color: #7F5539;
-    transform: translate3d(-50px, -2250px, 0) rotate(231deg);
 
+
+.title:hover .box1 {
+        transform: translate(calc(20vw - 600px), -500px) rotate(59deg);
+    z-index: -4;
+}
+
+.title:hover .box2 {
+    transform: translate(calc(20vw - 700px), 600px) rotate(-32deg);
     z-index: -3;
+}
+.title:hover .box3 {
+    transform: translate(calc(20vw - 700px), 600px) rotate(-39deg);
+
+    z-index: -2;
 }
 
 .title:hover .box4 {
-    width: 1450px;
-    height:750px;
-    background-color: #9C6644;
-    transform: translate3d(-290px, -2800px, 0) rotate(-141deg);
+    transform: translate(calc(20vw - 700px), 920px) rotate(-58deg);
 
-    z-index: -3;
-}*/
+    z-index: -1;
+}
 
 .medias {
     margin-left: 2%;
