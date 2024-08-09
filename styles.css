@@ -37,7 +37,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 70px;
+    height: 110px;
     background-color: #282828;
     padding: 0px 35px;
     box-sizing: border-box;
@@ -51,7 +51,8 @@ header {
 }
 
 .logo {
-    height: 45px; /* Adjust the logo height as needed */
+    height: 65px; /* Adjust the logo height as needed */
+    padding-left: 30px;
 }
 
 .nav-menu {
@@ -67,7 +68,7 @@ header {
     color: #fff;
     text-decoration: none;
     font-family: 'Sofia Pro Regular';
-    font-size: 20px;
+    font-size: 35px;
     padding: 10px 15px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 5px; /* Rounded corners for the buttons */
@@ -185,4 +186,50 @@ main {
 
 .title:hover h1{
     transform: translateX(30%) scale(0.8);
+}
+
+.medias {
+    margin-left: 2%;
+    margin-top: 600px;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    font-family: 'Requiner';
+}
+
+.illu {
+    height: 20%;
+    width: 20%;
+    border-radius: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.card {
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.hover-image {
+    opacity: 0;
+    transform: translateX(-100%) translateX(-5px);
+}
+
+/* Default image styles */
+.default-image {
+    z-index: 1; /* Place it below the hover image */
+}
+
+/* Hover image styles */
+.hover-image {
+    z-index: 2; /* Place it above the default image */
+    opacity: 0; /* Initially hidden */
+}
+
+/* On hover, show the hover image */
+.hover-image:hover {
+    opacity: 1; /* Show the hover image */
+}
+
+.default-image:hover {
+    opacity: 0; /* Hide the default image */
 }
