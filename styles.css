@@ -269,3 +269,7 @@ main {
 .animation .image-container:hover h2 {
     transform: translate(5%, 100%);
 }
+
+.renders .image-container:hover h2 {
+    transform: translate(-130%, -220%);
+}
