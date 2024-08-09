@@ -128,7 +128,7 @@ main {
 .box1 {
     width: 1000px;
     height: 8000px;
-    transition: transform 0.8s ease;
+    transition: transform 1s ease;
     background-color: #ddb892;
     transform: translate(calc(25vw - 600px), -800px) rotate(90deg);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
@@ -139,7 +139,7 @@ main {
 .box2 {
     width: 1000px;
     height:8000px;
-    transition: transform 0.8s ease;
+    transition: transform 1s ease;
     background-color: #b08968;
     transform: translate(calc(25vw - 700px), 800px) rotate(-90deg);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.47); /* Optional shadow */
@@ -150,7 +150,7 @@ main {
 .box3 {
     width: 1000px;
     height: 8000px;
-    transition: transform 0.8s ease;
+    transition: transform 1s ease;
     background-color: #7F5539;
     transform: translate(calc(25vw - 700px), 800px) rotate(-90deg);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
@@ -161,7 +161,7 @@ main {
 .box4 {
     width: 1500px;
     height: 8000px;
-    transition: transform 0.8s ease;
+    transition: transform 1s ease;
     background-color: #9C6644;
     transform: translate(calc(25vw - 700px), 1200px) rotate(-90deg);
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
@@ -254,14 +254,18 @@ main {
     color: #fff;
     z-index: 2;
     font-family: 'Requiner';
-    font-size: 100%;
+    font-size: 1.4vw;
     transition: transform 0.3s ease;
 }
 
 .models .image-container:hover h2 {
-    transform: translate(-130%, -240%);
+    transform: translate(-110%, -220%);
+}
+
+.logos .image-container:hover h2 {
+    transform: translate(-180%, -220%);
 }
 
 .animation .image-container:hover h2 {
-    transform: translate(100%, 240%);
+    transform: translate(5%, 100%);
 }
