@@ -44,7 +44,7 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 110px;
+    height: 80px;
     background-color: #282828;
     padding: 0px 35px;
     box-sizing: border-box;
@@ -58,7 +58,7 @@ header {
 }
 
 .logo {
-    height: 65px; /* Adjust the logo height as needed */
+    height: 55px; /* Adjust the logo height as needed */
     padding-left: 30px;
 }
 
@@ -75,7 +75,7 @@ header {
     color: #fff;
     text-decoration: none;
     font-family: 'Sofia Pro Regular';
-    font-size: 35px;
+    font-size: 25px;
     padding: 10px 15px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     border-radius: 5px; /* Rounded corners for the buttons */
@@ -92,17 +92,29 @@ main {
 }
 
 .title {
+    position: relative;
     width: 100%;
     height: 400px;
-    padding: 10px 20px;
     background-color: #E6CCB2;
     color: #282828;
-    overflow: hidden;
-    font-size: 72px;
+    /*overflow: hidden;*/
     font-family: 'Requiner';
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 0;
 }
 
+.title h1 {
+    position: absolute;
+    transition: transform 0.8s ease;
+    z-index: 2;
+}
+
+.title:hover h1{
+    transform: translate(calc(50vw - 50% - 20px)) scale(0.8);
+}
 
 /* Box styling */
 .box {
@@ -115,7 +127,7 @@ main {
     width: 2000px;
     height: 1000px;
     transition: transform 0.8s ease;
-    background-color: #ddb892; /* Example color */
+    background-color: #ddb892;
     transform: translate3d(-2000px, -2000px, 0) rotate(-31deg);
     z-index: -1;
 }
@@ -124,7 +136,7 @@ main {
     width: 1120px;
     height:812px;
     transition: transform 0.8s ease;
-    background-color: #b08968; /* Example color */
+    background-color: #b08968;
     transform: translate3d(-2000px, -500px, 0) rotate(238deg);
     z-index: -2;
 }
@@ -133,7 +145,7 @@ main {
     width: 1250px;
     height:618px;
     transition: transform 0.8s ease;
-    background-color: #7F5539; /* Example color */
+    background-color: #7F5539;
     transform: translate3d(-2000px, -500px, 0) rotate(231deg);
 
     z-index: -3;
@@ -143,16 +155,16 @@ main {
     width: 1450px;
     height:750px;
     transition: transform 0.8s ease;
-    background-color: #9C6644; /* Example color */
-    transform: translate3d(-2000px, 0px, 0) rotate(-141deg);
+    background-color: #9C6644;
+    transform: translate(-99vw) rotate(180deg);  
 
     z-index: -3;
 }
-
+/*
 .title:hover .box1 {
     width: 2000px;
     height: 1000px;
-    background-color: #ddb892; /* Example color */
+    background-color: #ddb892;
     transform: translate3d(-620px, -900px, 0) rotate(-31deg);
     z-index: -1;
 }
@@ -160,7 +172,7 @@ main {
 .title:hover .box2 {
     width: 1120px;
     height:812px;
-    background-color: #b08968; /* Example color */
+    background-color: #b08968;
     transform: translate3d(10px, -1500px, 0) rotate(238deg);
     z-index: -2;
 }
@@ -168,7 +180,7 @@ main {
 .title:hover .box3 {
     width: 1250px;
     height:618px;
-    background-color: #7F5539; /* Example color */
+    background-color: #7F5539;
     transform: translate3d(-50px, -2250px, 0) rotate(231deg);
 
     z-index: -3;
@@ -177,27 +189,11 @@ main {
 .title:hover .box4 {
     width: 1450px;
     height:750px;
-    background-color: #9C6644; /* Example color */
+    background-color: #9C6644;
     transform: translate3d(-290px, -2800px, 0) rotate(-141deg);
 
     z-index: -3;
-}
-
-.title h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.8s ease;
-    z-index: 2; /* Higher than .box elements */
-}
-
-.title:hover h1{
-    transform: translateX(30%) scale(0.8);
-}
-
-@media screen(max) {
-    
-}
+}*/
 
 .medias {
     margin-left: 2%;
