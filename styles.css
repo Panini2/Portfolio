@@ -58,7 +58,7 @@ header {
 }
 
 .logo {
-    height: 55px; /* Adjust the logo height as needed */
+    height: 55px;
     padding-left: 30px;
 }
 
@@ -78,12 +78,12 @@ header {
     font-size: 25px;
     padding: 10px 15px;
     transition: background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 5px; /* Rounded corners for the buttons */
+    border-radius: 5px;
 }
 
 .nav-menu li a:hover {
-    background-color: #757575; /* Change background on hover */
-    border-radius: 5px; /* Rounded corners for the buttons */
+    background-color: #757575;
+    border-radius: 5px;
     transform: scale(1.1);
 }
 
@@ -117,12 +117,10 @@ main {
     transform: translate(25vw) scale(0.8);
 }
 
-/* Box styling */
 .box {
     position: absolute;
     transform: translate(-50%, -50%);
-    margin: 0px; /* Space between boxes */
-    /*border: 1px solid #000; /* Border to visualize the box */
+    margin: 0px;
 }
 
 .box1 {
@@ -131,7 +129,7 @@ main {
     transition: transform 1s ease;
     background-color: #ddb892;
     transform: translate(calc(25vw - 600px), -800px) rotate(90deg);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 
     z-index: -4;
 }
@@ -142,7 +140,7 @@ main {
     transition: transform 1s ease;
     background-color: #b08968;
     transform: translate(calc(25vw - 700px), 800px) rotate(-90deg);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.47); /* Optional shadow */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.47);
 
     z-index: -3;
 }
@@ -153,7 +151,7 @@ main {
     transition: transform 1s ease;
     background-color: #7F5539;
     transform: translate(calc(25vw - 700px), 800px) rotate(-90deg);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* Optional shadow */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 
     z-index: -2;
 }
@@ -194,6 +192,7 @@ main {
 .medias {
     margin-left: 2%;
     margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: left;
     align-content: center;
@@ -212,6 +211,7 @@ main {
     justify-content: left;
     gap: 4%;
     margin-top: 25px;
+    margin-bottom: 180px;
     width: 100%;
 }
 
@@ -253,23 +253,67 @@ main {
     transform: translate(-50%, -50%);
     color: #fff;
     z-index: 2;
-    font-family: 'Requiner';
+    font-family: 'Sofia Pro Regular';
     font-size: 1.4vw;
     transition: transform 0.3s ease;
 }
 
 .models .image-container:hover h2 {
-    transform: translate(-110%, -220%);
+    transform: translate(-130%, -270%);
 }
 
 .logos .image-container:hover h2 {
-    transform: translate(-180%, -220%);
+    transform: translate(-200%, -260%);
 }
 
 .animation .image-container:hover h2 {
-    transform: translate(5%, 100%);
+    transform: translate(25%, 130%);
 }
 
 .renders .image-container:hover h2 {
-    transform: translate(-130%, -220%);
+    transform: translate(-170%, -270%);
+}
+
+.card-vfx {
+    display: flex;
+    justify-content: left;
+    gap: 4%;
+    margin-top: 25px;
+    margin-bottom: 180px;
+    width: 100%;
+}
+
+.splat .image-container h2 {
+    text-align: center;
+}
+
+.splat .image-container:hover h2 {
+    transform: translate(-110%, 45%);
+}
+
+.rocket .image-container h2 {
+    text-align: center;
+}
+
+.rocket .image-container:hover h2 {
+    transform: translate(-120%, -60%);
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background: linear-gradient(to bottom , #000000, #252525);
+
+
+}
+
+.footer-bottom {
+    color: #ffffff;
+    font-family: Alkia;
+    font-size: 24px;
+    
 }
