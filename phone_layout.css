@@ -1,0 +1,157 @@
+@font-face {
+    font-family: 'Sofia Pro Regular';
+    src: url('assets/fonts/Sofia\ Pro\ Regular\ Az.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro semi-bold';
+    src: url('assets/fonts/Sofia\ Pro\ Semi\ Bold\ Az.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alkia';
+    src: url('assets/fonts/Alkia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Requiner';
+    src: url('assets/fonts/Requiner-6RRLM.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadran';
+    src: url('assets/fonts/Quadran-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 1300px) {
+     header {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .navbar {
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #282828;
+        width: 180px;
+        padding: 10px 0;
+        z-index: 1;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        gap: 5px;
+    }
+    
+    .nav-menu.active li a {
+        border-radius: 0%;
+        width: 150px;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-menu.active li a:hover {
+        background-color: #474747;
+        transform: scale(1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .burger-menu:hover {
+        background-color: #757575;
+        transform: scale(1.1) translateY(-15px);
+    }
+
+     .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .logo {
+        margin-top: 10px;
+    }
+
+    .medias {
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .image-container h2 {
+        font-size: 3.5vw;
+    }
+
+    .card-gfx {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .card-vfx {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .card {
+        width: 50%;
+        height: auto;
+    }
+
+    .footer-bottom {
+        color: #ffffff;
+        font-family: Alkia;
+        font-size: 2vw;
+        
+    }
+
+    .title {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .title:hover .box1 {
+        transform: translate(calc(20vw - 350px - 5%), -500px) rotate(59deg);
+    z-index: -4;
+    }
+
+    .title:hover .box2 {
+        transform: translate(calc(20vw - 450px), 600px) rotate(-32deg);
+        z-index: -3;
+    }
+    .title:hover .box3 {
+        transform: translate(calc(20vw - 450px), 600px) rotate(-39deg);
+
+        z-index: -2;
+    }
+
+    .title:hover .box4 {
+        transform: translate(calc(20vw - 450px), 920px) rotate(-58deg);
+
+        z-index: -1;
+    }
+} 
