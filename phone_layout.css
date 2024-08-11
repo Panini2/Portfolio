@@ -102,13 +102,13 @@
     }
 
     .image-container h2 {
-        font-size: 3.5vw;
+        font-size: 5.3vw;
     }
 
     .card-gfx {
         justify-content: center;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 40px;
     }
 
     .card-vfx {
@@ -118,7 +118,7 @@
     }
     
     .card {
-        width: 50%;
+        width: 80%;
         height: auto;
     }
 
@@ -135,22 +135,22 @@
     }
 
     .title:hover .box1 {
-        transform: translate(calc(20vw - 350px - 5%), -500px) rotate(59deg);
+        transform: translate(calc(20vw), -500px) rotate(59deg);
     z-index: -4;
     }
 
     .title:hover .box2 {
-        transform: translate(calc(20vw - 450px), 600px) rotate(-32deg);
+        transform: translate(calc(20vw), 600px) rotate(-32deg);
         z-index: -3;
     }
     .title:hover .box3 {
-        transform: translate(calc(20vw - 450px), 600px) rotate(-39deg);
+        transform: translate(calc(20vw), 600px) rotate(-39deg);
 
         z-index: -2;
     }
 
     .title:hover .box4 {
-        transform: translate(calc(20vw - 450px), 920px) rotate(-58deg);
+        transform: translate(calc(20vw), 920px) rotate(-58deg);
 
         z-index: -1;
     }
