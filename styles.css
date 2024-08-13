@@ -275,7 +275,7 @@ main {
 }
 
 .models .image-container:hover h2 {
-    transform: translate(-130%, -270%);
+    transform: translate(-120%, -290%);
 }
 
 .logos .image-container:hover h2 {
@@ -312,7 +312,7 @@ main {
 }
 
 .rocket .image-container:hover h2 {
-    transform: translate(-120%, -60%);
+    transform: translate(-118%, -60%);
 }
 
 footer {

@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Sofia Pro Regular';
+    src: url('assets/fonts/Sofia\ Pro\ Regular\ Az.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sofia Pro semi-bold';
+    src: url('assets/fonts/Sofia\ Pro\ Semi\ Bold\ Az.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Alkia';
+    src: url('assets/fonts/Alkia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Requiner';
+    src: url('assets/fonts/Requiner-6RRLM.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quadran';
+    src: url('assets/fonts/Quadran-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #ede0d4;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    background-color: #282828;
+    padding: 0px 35px;
+    box-sizing: border-box;
+}
+
+.burger-menu {
+    display: none; /* Hide burger menu by default */
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px; /* Adjust the positioning */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.navbar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    height: 55px;
+    padding-left: 30px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 70px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li a {
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Sofia Pro Regular';
+    font-size: 25px;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.nav-menu li a:hover {
+    background-color: #757575;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
