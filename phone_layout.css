@@ -135,22 +135,22 @@
     }
 
     .title:hover .box1 {
-        transform: translate(calc(20vw - 250px - 5%), -500px) rotate(59deg);
+        transform: translate(calc(10vw - 250px - 5%), -500px) rotate(59deg);
     z-index: -4;
     }
 
     .title:hover .box2 {
-        transform: translate(calc(20vw - 350px), 600px) rotate(-32deg);
+        transform: translate(calc(10vw - 350px), 600px) rotate(-32deg);
         z-index: -3;
     }
     .title:hover .box3 {
-        transform: translate(calc(20vw - 350px), 600px) rotate(-39deg);
+        transform: translate(calc(10vw - 350px), 600px) rotate(-39deg);
 
         z-index: -2;
     }
 
     .title:hover .box4 {
-        transform: translate(calc(20vw - 350px), 920px) rotate(-58deg);
+        transform: translate(calc(10vw - 350px), 920px) rotate(-58deg);
 
         z-index: -1;
     }

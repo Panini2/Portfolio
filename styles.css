@@ -275,19 +275,19 @@ main {
 }
 
 .models .image-container:hover h2 {
-    transform: translate(-120%, -290%);
+    transform: translate(-120%, -300%);
 }
 
 .logos .image-container:hover h2 {
-    transform: translate(-200%, -260%);
+    transform: translate(-210%, -280%);
 }
 
 .animation .image-container:hover h2 {
-    transform: translate(25%, 130%);
+    transform: translate(25%, 150%);
 }
 
 .renders .image-container:hover h2 {
-    transform: translate(-170%, -270%);
+    transform: translate(-190%, -300%);
 }
 
 .card-vfx {
