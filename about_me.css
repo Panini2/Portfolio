@@ -130,3 +130,47 @@ bio {
     font-family: Sofia Pro Regular;
     font-size: 1.2vw;
 }
+
+.skills {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 3.5rem;
+    font-size: 2.5rem;
+    font-family: Sofia Pro semi-bold;
+}
+
+.languages {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 10rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e6ccb2;
+    border-radius: 15px;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+.skilpic {
+    margin-top: 3rem;
+    width: auto;
+    height:15rem;
+    transition: ease 0.2s;
+}
+
+.skilpic:hover {
+    transform: scale(1.2);
+}
+
+.blank {
+    height: 20rem;
+}
