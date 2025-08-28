@@ -122,13 +122,24 @@ bio {
     border: 10px solid #fff;
 }
 
-.name, .creds {
+.name {
     font-family: quadran;
+    font-size: 3rem;
+    margin-bottom: 0px;
+}
+
+.creds {
+    font-family: quadran;
+    font-size: 2rem;
+    margin-top: 0.2rem;
 }
 
 .text {
     font-family: Sofia Pro Regular;
-    font-size: 1.2vw;
+}
+
+.myself {
+    font-size: 1.3rem;
 }
 
 .skills {
@@ -173,4 +184,23 @@ bio {
 
 .blank {
     height: 20rem;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background: linear-gradient(to bottom , #000000, #252525);
+
+
+}
+
+.footer-bottom {
+    color: #ffffff;
+    font-family: Alkia;
+    font-size: 24px;
+    
 }
